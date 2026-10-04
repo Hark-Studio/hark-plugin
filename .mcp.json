@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hark": {
+      "type": "http",
+      "url": "https://harkstudio.io/mcp"
+    }
+  }
+}

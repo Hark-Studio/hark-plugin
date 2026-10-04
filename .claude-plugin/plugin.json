@@ -1,0 +1,23 @@
+{
+  "name": "hark",
+  "version": "0.1.0",
+  "description": "Hark shared project memory for ChatGPT, Codex, dots, Grok Build and Grok Bot: the Hark MCP connector plus skills that read the project brief at the start of a session, keep work inside its accepted decisions, and write the handoff when you stop.",
+  "author": {
+    "name": "Hark Studio",
+    "email": "hello@harkstudio.io",
+    "url": "https://harkstudio.io"
+  },
+  "homepage": "https://harkstudio.io/how-it-works/connect",
+  "repository": "https://github.com/Hark-Studio/hark-plugin",
+  "license": "MIT",
+  "keywords": [
+    "hark",
+    "harkstudio",
+    "hark project memory",
+    "hark handoff",
+    "hark brief"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "icon": "./assets/icon.png"
+}

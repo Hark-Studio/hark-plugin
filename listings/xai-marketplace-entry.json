@@ -1,0 +1,13 @@
+{
+  "name": "hark",
+  "description": "Hark shared project memory (MCP connector + skills). Read a project's brief, decisions and next action at the start of a session, log decisions and shipped work as you go, and write the handoff the next session or teammate picks up from.",
+  "category": "development",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/Hark-Studio/hark-plugin.git",
+    "sha": "PIN_THE_RELEASE_COMMIT_SHA_HERE"
+  },
+  "homepage": "https://github.com/Hark-Studio/hark-plugin",
+  "keywords": ["hark", "harkstudio", "hark project memory", "hark handoff", "hark brief"],
+  "domains": ["harkstudio.io"]
+}

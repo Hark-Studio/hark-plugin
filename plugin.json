@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hark",
+  "version": "0.1.0",
+  "description": "Hark shared project memory for ChatGPT, Codex, dots, Grok Build and Grok Bot: the Hark MCP connector plus skills that read the project brief at the start of a session, keep work inside its accepted decisions, and write the handoff when you stop.",
+  "author": {
+    "name": "Hark Studio",
+    "email": "hello@harkstudio.io",
+    "url": "https://harkstudio.io"
+  },
+  "homepage": "https://harkstudio.io/how-it-works/connect",
+  "repository": "https://github.com/Hark-Studio/hark-plugin",
+  "license": "MIT",
+  "keywords": [
+    "hark",
+    "harkstudio",
+    "hark project memory",
+    "hark handoff",
+    "hark brief"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hark",
+        "shortDescription": "Shared project memory",
+        "longDescription": "Hark is the home base for every idea you are building: one memory that your agents, teammates and clients all read from and write to, so an idea moves from spark to shipped without the plan living in one person's chat history.\n\nThis plugin connects ChatGPT, Codex and dots to your Hark projects through the Hark MCP connector, and teaches the agent Hark's session flow:\n- Start every piece of work by reading the project's brief (current state, accepted decisions, non-goals, blockers, next action) with get_agent_brief.\n- Work inside the project's conventions, and log decisions, shipped work and failed attempts as they happen.\n- End with a handoff (end_session) that the next session, agent or teammate picks up from, or close the session when nothing changed.\n- For always-on agents such as dots: one short session per run, read first, write little, and never leave a session open.\n\nWhat it needs: a Hark account (free 14-day trial, no card) and, in a repo, a .hark/project file holding the project's code (for example V-012). Sign in happens in the browser through OAuth on first use. Agents proposing decisions or state changes create candidates that a person accepts in Hark.\n\nLimits: the plugin ships no code and no hooks, so nothing runs on your machine; the client's own confirmation rules apply to writes. Claude Code users should install the Hark mod (Hark-Studio/hark-mod) instead, which adds a brief on start, an edit guard and a handoff on stop inside Claude Code.",
+        "developerName": "Hark Studio",
+        "category": "Productivity",
+        "capabilities": [
+          "Read a project's brief: current state, accepted decisions, non-goals, blockers and next action",
+          "Log decisions, shipped work and failed attempts to the project's journal",
+          "Write the session handoff the next session or teammate picks up from",
+          "Capture sparks, feedback and metrics against a project",
+          "Search and digest projects across a workspace"
+        ],
+        "websiteURL": "https://harkstudio.io",
+        "supportURL": "https://harkstudio.io/support",
+        "privacyPolicyURL": "https://harkstudio.io/privacy",
+        "termsOfServiceURL": "https://harkstudio.io/terms",
+        "defaultPrompt": [
+          "Read the Hark brief for V-012 and tell me what's next.",
+          "Log this as a decision in Hark, with the rationale we just discussed.",
+          "Write the Hark handoff for what we did in this session."
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  }
+}

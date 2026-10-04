@@ -1,0 +1,5 @@
+.DS_Store
+# Type declarations Claude Code writes for local development
+.claude/types/
+.claude-plugin/types/
+.hark
