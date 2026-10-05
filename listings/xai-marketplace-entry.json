@@ -5,7 +5,7 @@
   "source": {
     "source": "url",
     "url": "https://github.com/Hark-Studio/hark-plugin.git",
-    "sha": "PIN_THE_RELEASE_COMMIT_SHA_HERE"
+    "sha": "d88a073f0e0ec724e24cc419b392b879f4e677d4"
   },
   "homepage": "https://github.com/Hark-Studio/hark-plugin",
   "keywords": ["hark", "harkstudio", "hark project memory", "hark handoff", "hark brief"],

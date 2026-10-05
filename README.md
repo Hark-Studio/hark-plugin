@@ -98,7 +98,7 @@ One repo, three listings. Rule: never say Hark is available on a platform until 
 | Platform | Catalog | Status | How |
 | --- | --- | --- | --- |
 | ChatGPT, Codex, dots | OpenAI plugin directory | Not submitted | [listings/openai-directory.md](listings/openai-directory.md): prerequisites, the ZIP, the test cases review asks for |
-| Grok Build | `xai-org/plugin-marketplace` | Not submitted | PR adding [listings/xai-marketplace-entry.json](listings/xai-marketplace-entry.json) with a pinned commit SHA, body from [listings/xai-pr-body.md](listings/xai-pr-body.md) |
+| Grok Build | `xai-org/plugin-marketplace` | PR open, pinned to v0.1.0 (d88a073) | PR adding [listings/xai-marketplace-entry.json](listings/xai-marketplace-entry.json) with a pinned commit SHA, body from [listings/xai-pr-body.md](listings/xai-pr-body.md) |
 | Grok Bot | Unverified | Path unknown | [listings/grok-bot.md](listings/grok-bot.md) |
 
 **Hark-side prerequisites** (checked 2026-10-03):
